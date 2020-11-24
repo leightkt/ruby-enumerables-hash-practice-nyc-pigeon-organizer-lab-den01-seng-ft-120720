@@ -26,6 +26,7 @@ def nyc_pigeon_organizer(data)
  # write your code here!
  #create new array with names as keys and genders
  final_results = data.each_with_object({}) do |(key, value), final_array|
+   binding.pry
      value.each{|inner_key, names|
        names.each{|name|
          if !final_array[name]
